@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <!--<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--<![endif]&ndash;&gt;-->
+    <style>
+    body{
+        background-color: white;!important;
+
+    }
+    .box-tools a{
+        border: none;
+        color: #97a0b3;
+        display: inline;
+    }
+    .box-tools a:hover{
+        background-color: white;
+        color: #5b5b5b;
+    }
+    .box-tools .gang{
+        font-weight: bold;
+        font-size: 14px;
+        /*padding: 6px 6px;*/
+    }
+        /*a{*/
+            /*color: #222;*/
+        /*}*/
+        /*a:hover{*/
+            /*color:#222;*/
+        /*}*/
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+<!--<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">-->
+    <!--Button with data-target-->
+<!--</button>-->
+
+<div id="collapseTwo" class="collapse in"></div>
+<div class="content-box">
+    <!-- 头部-->
+    <div class="box-header clearFix">
+        <h3>Monthly Recap Report</h3>
+        <div class="box-tools pull-right">
+            <a class="accordion-toggle gang" data-toggle="collapse" href="#collapseOne">—</a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                    <span class="glyphicon glyphicon-wrench"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <a class="accordion-toggle cha" data-toggle="collapse" href="#collapseTwo">×</a>
+        </div>
+    </div>
+    <!--<div id="collapseOne" class="accordion-body collapse" >-->
+        <!--<div class="accordion-inner">-->
+   <div id="collapseOne" class="collapse in">
+    <div class="box-body">
+        <div class="row">
+            <!-- 左侧散点图-->
+            <div class="col-lg-7 box-body-left">
+                <p>Sales: 1 Jan, 2014 - 30 Jul, 2014</p>
+                <div id="san" class="san"></div>
+            </div>
+            <!-- 右侧进度条-->
+            <div class="col-lg-5 box-body-right">
+                <!-- 右侧进度条-->
+                <p>Goal Completion</p>
+                <div class="progress-box clearFix">
+                    <span class="progress-text">Add Products to Cart</span>
+                    <span class="progress-number"><b>160</b>/200</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-box">
+                    <span class="progress-text">Complete Purchase</span>
+                    <span class="progress-number"><b>310</b>/400</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-box">
+                    <span class="progress-text">Visit Premium Page</span>
+                    <span class="progress-number"><b>480</b>/800</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-box">
+                    <span class="progress-text">Send Inquiries</span>
+                    <span class="progress-number"><b>250</b>/500</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部-->
+    <div class="box-footer">
+        <div class="row">
+            <div class="col-sm-3 col-xs-6 box-footer-child box-footer-child1">
+                <p><span class="glyphicon glyphicon-triangle-top"></span><span>17%</span></p>
+                <p><strong>$35,210.43</strong></p>
+                <p>TOTAL REVENUE</p>
+            </div>
+            <div class="col-sm-3 col-xs-6 box-footer-child box-footer-child2">
+                <p><span class="glyphicon glyphicon-triangle-right"></span><span>0%</span></p>
+                <p><strong>$10,390.90</strong></p>
+                <p>TOTAL COST</p>
+            </div>
+            <div class="col-sm-3 col-xs-6 box-footer-child box-footer-child3">
+                <p><span class="glyphicon glyphicon-triangle-bottom"></span><span>20%</span></p>
+                <p><strong>$24,813.53</strong></p>
+                <p>TOTAL PROFIT</p>
+            </div>
+            <div class="col-sm-3 col-xs-6 box-footer-child box-footer-child4">
+                <p><span class="glyphicon glyphicon-triangle-left"></span><span>18%</span></p>
+                <p><strong>1200</strong></p>
+                <p>GOAL COMPLETIONS</p>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+</div>
+<!--</div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+        <!--<div class="accordion-group">-->
+
+            <!--<div class="accordion-heading">-->
+                <!--<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">-->
+                    <!--点击我扩展。 再次点击我折叠。 Part I。-->
+                <!--</a>-->
+            <!--</div>-->
+
+                <!--1111-->
+
+
+        <!--</div>-->
+
+        <!--<div class="accordion-group">-->
+            <!--<div class="accordion-heading">-->
+                <!--<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">-->
+                    <!--点击我扩展。 再次点击我折叠。 Part II。-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div id="collapseTwo" class="accordion-body collapse">-->
+                <!--<div class="accordion-inner">-->
+                    <!--2222-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<div class="accordion-group">-->
+            <!--<div class="accordion-heading">-->
+                <!--<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">-->
+                    <!--点击我扩展。 再次点击我折叠。 Part  III。-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div id="collapseThree" class="accordion-body collapse">-->
+                <!--<div class="accordion-inner">-->
+                    <!--3333.-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+
+
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+ <!--<script src="js/echarts.min.js"></script>-->
+<!--<script src="js/china.js"></script>-->
+<!--<script src="js/Scatter.js"></script>-->
+
+</body>
+</html>
